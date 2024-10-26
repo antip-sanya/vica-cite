@@ -230,20 +230,21 @@
     }
 
     .header-image {
-    max-width: 500px;
-    height: 145px;
-    object-fit: cover;
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
+      max-width: 500px;
+      height: 145px;
+      object-fit: cover;
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
 
     @media screen and (max-width: 768px) {
 
       /* Adjust header text sizes */
-      .header-image{
+      .header-image {
         max-width: 300px;
         height: 90px;
       }
+
       .header h1 {
         font-size: 2.4em;
         line-height: 1.2;
@@ -341,13 +342,42 @@
         font-size: 1em;
         margin-top: 15px;
       }
+
+      .contact-phone {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+      }
+
+      .contact-phone a {
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-size: 1.2em;
+      }
+
+      .svg-inline--fa.fa-w-16 {
+        width: 1em;
+      }
+
+      .svg-inline--fa {
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -.125em;
+      }
+
+      .fa-phone:before {
+        content: "\f095";
+      }
     }
 
     @media screen and (max-width: 480px) {
-      .header-image{
+      .header-image {
         max-width: 200px;
         height: 80px;
       }
+
       .header h1 {
         font-size: 2em;
       }
@@ -829,6 +859,16 @@
       transform: scale(1.1);
       color: #98D8C8;
       /* Soft pastel green on hover */
+    }
+    .no-underline{
+      text-decoration: none;
+      color:#FFF;
+      transition: color 0.3s;
+
+    }
+
+    .no-underline:hover{
+      color: #4ECDC4;
     }
 
     @keyframes bounce {
@@ -1572,9 +1612,8 @@
 
 <body>
   <header class="header">
-    <img src="img/3857a53a7e4de401993f84b9203bf680.png"
-      alt="лого книга" width="800" height="150" class="header-image" w-tid="11"
-      data-image_id="0" alt-rewritten="hit rate limit">
+    <img src="img/3857a53a7e4de401993f84b9203bf680.png" alt="лого книга" width="800" height="150" class="header-image"
+      w-tid="11" data-image_id="0" alt-rewritten="hit rate limit">
     <h1 class="animate-text">Viki's Globe Study</h1>
     <p class="animate-text">Погружение в культуру через уникальные иммерсивные мероприятия</p>
   </header>
@@ -1779,9 +1818,13 @@
       <div class="contact-content">
         <div class="contact-info">
           <h3>Свяжитесь с нами</h3>
+          <p class="contact-phone" w-tid="116">
+            <i class="fas fa-phone"></i> 
+            <a href="tel:+79615369354" class="no-underline">+7 (961) 536-93-54</a>
+          </p>
           <div class="social-icons">
-            <a href="https://vk.com/viki_pro_english" target="_blank" rel="noopener noreferrer" class="social-icon vk-icon"
-              aria-label="VK Page">
+            <a href="https://vk.com/viki_pro_english" target="_blank" rel="noopener noreferrer"
+              class="social-icon vk-icon" aria-label="VK Page">
               <i class="fab fa-vk"></i>
             </a>
             <a href="https://t.me/viki_pro_english" target="_blank" rel="noopener noreferrer"
