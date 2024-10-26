@@ -74,6 +74,7 @@
       font-family: 'Lora', serif;
       font-size: 4em;
       margin-bottom: 20px;
+      margin-top: 0px;
       color: #4ECDC4;
       /* Soft turquoise color */
       text-shadow: 0 0 15px rgba(78, 205, 196, 0.8);
@@ -228,9 +229,21 @@
       width: 100%;
     }
 
+    .header-image {
+    max-width: 500px;
+    height: 145px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
     @media screen and (max-width: 768px) {
 
       /* Adjust header text sizes */
+      .header-image{
+        max-width: 300px;
+        height: 90px;
+      }
       .header h1 {
         font-size: 2.4em;
         line-height: 1.2;
@@ -331,6 +344,10 @@
     }
 
     @media screen and (max-width: 480px) {
+      .header-image{
+        max-width: 200px;
+        height: 80px;
+      }
       .header h1 {
         font-size: 2em;
       }
@@ -1058,7 +1075,7 @@
     }
 
     @media (max-width: 768px) {
-      .hero{
+      .hero {
         margin-top: 0px;
       }
 
@@ -1555,6 +1572,9 @@
 
 <body>
   <header class="header">
+    <img src="img/3857a53a7e4de401993f84b9203bf680.png"
+      alt="лого книга" width="800" height="150" class="header-image" w-tid="11"
+      data-image_id="0" alt-rewritten="hit rate limit">
     <h1 class="animate-text">Viki's Globe Study</h1>
     <p class="animate-text">Погружение в культуру через уникальные иммерсивные мероприятия</p>
   </header>
@@ -1570,14 +1590,12 @@
   <div class="content">
     <section id="about" class="hero">
       <div class="oval-frame oval-frame-dectop">
-        <img src="img/foto.JPG" width="300" height="400" alt="Портрет Виктории Бартеневой"
-          class="desktop-image">
+        <img src="img/foto.JPG" width="300" height="400" alt="Портрет Виктории Бартеневой" class="desktop-image">
       </div>
       <div class="hero-content">
         <h2>Добро пожаловать в мир культурного погружения!</h2>
         <div class="oval-frame mobile-frame">
-          <img src="img/foto.JPG" width="300" height="400" alt="Портрет Виктории Бартеневой"
-            class="mobile-image">
+          <img src="img/foto.JPG" width="300" height="400" alt="Портрет Виктории Бартеневой" class="mobile-image">
         </div>
         <p>Я, Виктория Бартенева, создаю уникальные мероприятия, которые позволяют вам погрузиться в культуру, эстетику
           и традиции разных стран, не покидая вашего города.</p>
