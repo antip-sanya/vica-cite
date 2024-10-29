@@ -352,7 +352,7 @@
         color: #FFFFFF;
         text-decoration: none;
         transition: color 0.3s ease;
-        font-size: 1.2em;
+        font-size: 0.8em;
       }
 
       .svg-inline--fa.fa-w-16 {
@@ -860,14 +860,15 @@
       color: #98D8C8;
       /* Soft pastel green on hover */
     }
-    .no-underline{
+
+    .no-underline {
       text-decoration: none;
-      color:#FFF;
+      color: #FFF;
       transition: color 0.3s;
 
     }
 
-    .no-underline:hover{
+    .no-underline:hover {
       color: #4ECDC4;
     }
 
@@ -1579,6 +1580,29 @@
       height: 8px;
     }
 
+    .floating-contact-button {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #4ECDC4;
+      color: #0A1929;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+      transition: all 0.3s ease;
+      animation: float 3s ease-in-out infinite;
+    }
+
     @media (max-width: 768px) {
       .slide img {
         height: 300px;
@@ -1604,6 +1628,15 @@
         width: 6px;
         height: 6px;
       }
+
+      .floating-contact-button {
+        bottom: 20px;
+      }
+
+      .contact-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
     }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -1627,6 +1660,7 @@
   </nav>
 
   <div class="content">
+
     <section id="about" class="hero">
       <div class="oval-frame oval-frame-dectop">
         <img src="img/foto.JPG" width="300" height="400" alt="Портрет Виктории Бартеневой" class="desktop-image">
@@ -1819,7 +1853,7 @@
         <div class="contact-info">
           <h3>Свяжитесь с нами</h3>
           <p class="contact-phone" w-tid="116">
-            <i class="fas fa-phone"></i> 
+            <i class="fas fa-phone"></i>
             <a href="tel:+79615369354" class="no-underline">+7 (961) 536-93-54</a>
           </p>
           <div class="social-icons">
@@ -1845,6 +1879,17 @@
         </div>
       </div>
     </section>
+  </div>
+  <div class="floating-contact-button" w-tid="130">
+    <a href="tel:+79615369354" class="contact-btn" w-tid="131">
+      <svg class="svg-inline--fa fa-phone fa-w-16" w-tid="132" aria-hidden="true" focusable="false" data-prefix="fas"
+        data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+        <path fill="currentColor"
+          d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+        </path>
+      </svg><!-- <i class="fas fa-phone" w-tid="132"></i> Font Awesome fontawesome.com -->
+      Связаться с нами
+    </a>
   </div>
 
   <button id="scroll-to-top" title="Go to top">↑</button>
